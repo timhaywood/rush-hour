@@ -29,7 +29,7 @@ type CarData = { orientation: "|" | "-"; locations: string[] };
 const cars = new Map<string, CarData>();
 
 /** Checks if string only contains letters */
-const isPartOfCar = (string) => new RegExp(/[A-Z]/).test(string);
+const isPartOfCar = (char: string) => new RegExp(/[A-Z]/).test(char);
 
 /** Set or update a car in the map */
 const updateCar = (
@@ -81,8 +81,6 @@ console.log(
     .map(([carKey, { orientation }]) => `${carKey}${orientation}`)
     .join(" ")
 );
-
-console.log(isItSolved(startingGrid));
 
 function tryMoves() {
   /**

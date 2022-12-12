@@ -1,0 +1,26 @@
+{
+  "name": "rush-hour",
+  "version": "1.0.0",
+  "description": "Rush hour solver",
+  "main": "dist/rush.ts",
+  "scripts": {
+    "type-check": "tsc",
+    "build": "swc rush.ts -o dist/index.js",
+    "play": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timhaywood/rush-hour.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timhaywood/rush-hour/issues"
+  },
+  "homepage": "https://github.com/timhaywood/rush-hour#readme",
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.3.22",
+    "typescript": "^4.9.4"
+  }
+}
